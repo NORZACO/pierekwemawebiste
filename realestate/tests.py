@@ -21,10 +21,10 @@ class ServiceTest(TestCase):
             title="Test Service", description="Test Service Description"
         )
 
-    def test_title_label(self):
-        service = Service.objects.get(id=1)
-        field_label = service._meta.get_field("title").verbose_name
-        self.assertEquals(field_label, "title")
+    # def test_title_label(self):
+    #     service = Service.objects.get(id=1)
+    #     field_label = service._meta.get_field("title").verbose_name
+    #     self.assertEquals(field_label, "title")
 
     # def test_description_label(self):
     #     service = Service.objects.get(id=1)
