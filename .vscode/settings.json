@@ -1,2 +1,14 @@
 {
+    "jira-plugin.workingProject": "",
+    "cSpell.words": [
+        "ckediters",
+        "dotenv",
+        "mainsonitect",
+        "pierekwemawebiste",
+        "portfoliodatabase",
+        "POSTGRESS",
+        "psycopg",
+        "realestate",
+        "whitenoise"
+    ]
 }
