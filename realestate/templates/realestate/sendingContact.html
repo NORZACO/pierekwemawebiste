@@ -1,0 +1,46 @@
+<div class="col-md-6 mb-3">
+    <div class="form-group">
+        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Name" required>
+    </div>
+</div>
+<div class="col-md-6 mb-3">
+    <div class="form-group">
+        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" required>
+    </div>
+</div>
+<div class="col-md-12 mb-3">
+    <div class="form-group">
+        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" required>
+    </div>
+</div>
+<div class="col-md-12 mb-3">
+    <div class="form-group">
+        <input type="tel" name="phonenumber" class="form-control form-control-lg form-control-a" placeholder="phonenumber" required>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="form-group">
+        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Message" required></textarea>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('form').submit(function(event) {
+            event.preventDefault();
+            var form = $(this);
+            var url = 'http://127.0.0.10/contact';
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: form.serialize(),
+                success: function(response) {
+                    // Handle success response
+                },
+                error: function(error) {
+                    // Handle error response
+                }
+            });
+        });
+    });
+</script>

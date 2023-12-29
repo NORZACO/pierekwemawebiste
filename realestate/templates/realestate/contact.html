@@ -1,6 +1,7 @@
 {% extends "realestate/main.html" %}
 
 {% load static %}
+{% block title %} Contact {% endblock title %}
 
 
 {% block content %}
@@ -113,10 +114,10 @@
                     </div>
                     <div class="icon-box-content">
                       <p class="mb-1">Email.
-                        <span class="color-a">contact@example.com</span>
+                        <span class="color-a"> maisonsitect@gmail.com  </span>
                       </p>
                       <p class="mb-1">Phone.
-                        <span class="color-a">++234 00000</span>
+                        <span class="color-a">+243 973303896</span>
                       </p>
                     </div>
                   </div>
@@ -181,4 +182,8 @@
     </section><!-- End Contact Single-->
 
   </main><!-- End /main -->
+
+
+{% include 'realestate/sendingContact.html' %}
+  
 {% endblock %}
